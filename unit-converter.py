@@ -1,7 +1,9 @@
 print("Hi! Welcome to the unit converter - that converts units!")
 
 while True:
-    km = int(input("Please enter the kilometers you want to convert: "))
+    km = input("Please enter the kilometers you want to convert: ")
+
+    km = float(km.replace(",", "."))
 
     miles = km / 1.609344
 
